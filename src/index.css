@@ -1,0 +1,190 @@
+* {
+   margin: 0;
+   padding: 0;
+}
+
+.app_container {
+   height: 100vh;
+   position: relative;
+}
+
+.gradient_container {
+   background: rgb(76, 148, 254);
+   background: linear-gradient(
+      180deg,
+      rgba(76, 148, 254, 1) 0%,
+      rgba(255, 255, 255, 1) 81%
+   );
+   position: absolute;
+   top: 0;
+   left: 0;
+   height: 30vh;
+   width: 100%;
+}
+
+.form_container {
+   width: 30vw;
+   height: 60%;
+   margin: 0 auto;
+   position: absolute;
+   top: 5%;
+   left: 35%;
+}
+
+.flex_container {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+
+.small_icon {
+   width: 10%;
+   height: auto;
+   margin: 0.5rem 0;
+}
+
+.stepper_container {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+
+.step {
+   width: 46%;
+   background-color: #cdcdcd;
+   height: 6px;
+   position: relative;
+}
+
+.indicator {
+   /* width: 20%; */
+   background: blue;
+}
+
+.big_icon {
+   width: 50%;
+   height: auto;
+}
+
+.flex_center {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   margin: 1rem 0;
+}
+
+.form_input {
+   height: 4rem;
+   width: 100%;
+   outline: none;
+   animation: bounce 1s infinite;
+   border: 2px solid #70A1BD;
+   border-radius: 5px;
+}
+
+@keyframes bounce {
+   0%, 100% {
+      transform: scale(0.95);
+   }
+   50% {
+      transform: scale(1);
+   }
+}
+
+.form_input[type="number"] {
+   -moz-appearance: textfield;
+}
+
+.form_button {
+   padding: 1rem;
+   width: 100%;
+   outline: none;
+   background: #2c2c2c;
+   color: #ffffff;
+   border: none;
+   font-size: 1rem;
+   cursor: pointer;
+}
+
+.form_button:disabled {
+   background: #7a7a7a;
+   cursor: not-allowed;
+}
+
+.flex_col {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+}
+
+.info_text {
+   font-size: 13px;
+   color: #3d3d3d;
+}
+
+.flex_row {
+   display: flex;
+   align-items: center;
+   gap: 3px;
+}
+
+.link_text {
+   font-size: 13px;
+   color: #808080;
+   border-bottom: 1px solid #808080;
+   cursor: pointer;
+}
+
+.modal_content {
+   border: 1px solid #cdcdcd;
+}
+
+.modal_heading {
+   border-bottom: 1px solid #cdcdcd;
+   background: #eceaea;
+   padding: 2rem;
+}
+
+.content_container {
+   padding: 1rem;
+   gap: 1rem;
+}
+
+.modal_close {
+   width: 100%;
+   padding: 1rem;
+   font-size: 1.5rem;
+   cursor: pointer;
+   border: none;
+   background-color: rgb(52, 52, 200);
+   color: white;
+}
+.part {
+   position: absolute;
+   top: 0;
+   left: 0;
+   background-color: blue;
+   height: 6px;
+   width: 10%;
+}
+
+.error_text {
+   color: red;
+   text-align: center;
+}
+
+.input {
+   height: 4rem;
+   width: 100% !important;
+   padding: 1rem;
+   border: none !important;
+   outline: none !important;
+}
+
+@media screen and (max-width: 768px) {
+   .form_container {
+      width: 90%;
+      left: 5%;
+   }
+}
